@@ -19,7 +19,6 @@ Grid.rowconfigure(root, 3, weight=1)
 Grid.columnconfigure(root, 3, weight=1)
 Grid.rowconfigure(root, 4, weight=1)
 
-
 display = Entry(root, textvariable=inputNum, insertwidth=3, bg='white', justify='left').grid(row=0, column=0, rowspan=1,
                                                                                              columnspan=4,
                                                                                              sticky="NSWE")
@@ -39,6 +38,6 @@ multiply = Button(root, text="*", fg='red', font=("arial", 15, "bold")).grid(row
 cls = Button(root, text="C", fg='red', font=("arial", 15, "bold")).grid(row=4, column=0, sticky="NSEW")
 btn0 = Button(root, text="0", fg='red', font=("arial", 15, "bold")).grid(row=4, column=1, sticky="NSEW")
 equal = Button(root, text="=", fg='red', font=("arial", 15, "bold")).grid(row=4, column=2, sticky="NSEW")
-division = Button(root, text="/", fg='red', sfont=("arial", 15, "bold")).grid(row=4, column=3, sticky="NSEW")
+division = Button(root, text="/", fg='red', font=("arial", 15, "bold")).grid(row=4, column=3, sticky="NSEW")
 
 root.mainloop()
